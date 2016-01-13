@@ -1,0 +1,17 @@
+<div>
+	<form id="filterbox" class="inputBox">
+		<input class="filterbox" type='text' ng-model="searchString" placeholder="What are you looking to swoop?"/>
+	</form>
+	<a id="tings" class="button" ng-click="goTrade()">Trade Tings!!</a>
+	<a class="button" ng-click="goSwoop()">Free Ting!!</a>
+	<form id="formclass" ng-submit="postItem(item)">
+	<!-- Debug Later -->
+		<h2 id="titlehead" class="headings">Title</h2>
+		<input name="title" id="nameField" class="where" ng-model="item.a" required>
+		<h3 class="headings">Your Location</h3>
+		<input name="location" id="nameField" class="where" ng-model="item.location" required>
+		<h3 class="headings">Information</h3>
+		<input name="inform" class="info" ng-model="item.info" required>		
+		<button class="saint" >You're a Saint!!! <3 </button>
+  </form>
+</div>

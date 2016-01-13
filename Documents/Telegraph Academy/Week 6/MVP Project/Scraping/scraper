@@ -1,0 +1,11 @@
+var Xray = require('x-ray');
+
+var xray = new Xray();
+
+xray('http://sfbay.craigslist.org/search/zip', 'p', 
+	[{
+			p: '',
+			href: '@href'
+	}]
+)
+	.write('results.json')

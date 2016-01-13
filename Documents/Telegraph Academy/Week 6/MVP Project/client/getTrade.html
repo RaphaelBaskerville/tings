@@ -1,0 +1,21 @@
+<div>
+	<form id="filterbox" class="inputBox">
+		<input class="filterbox" type='text' ng-model="searchString" placeholder="What would you like to Trade?"/>
+	</form>
+	<a id="tings" class="button" ng-click="goPost()">Trade your Tings!!</a>
+	<a class="button" ng-click="goSwoop()">Free Tings!!</a>
+	<div class="rows" ng-repeat="row in data | filter: searchString">
+		<div class= "glob">
+					<div class="tingting">
+			<img class="tingicon" src="http://drinks.seriouseats.com/images/20110621-157828-ting-grapefruit-soda.jpg">
+			</div>
+			<h4 class="title">{{row.title}}</h4>
+			<a href="{{row.imageURI}}" class="uri">{{row.postURI}}</a>
+		</div>
+		<div class="blob">
+			<p class="time">{{row.time}}</p>
+			<h5 class="location">{{row.location}}</h5>
+		</div>
+	</div>
+
+</div>
